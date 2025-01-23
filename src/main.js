@@ -28,7 +28,7 @@ function getData() {
     filteredData.forEach((value) => {
         const flag = document.createElement("a");
         flag.classList.add("link");
-        flag.href = "https://flag-umber.vercel.app/info.html";
+        flag.href = "info.html";
         flag.innerHTML = `
             <img src="${value?.flags?.png}" />
             <p>${value?.name?.common}</p>
