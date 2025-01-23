@@ -1,4 +1,3 @@
 {
-    "rewrites": [{"source": "/info", "destination": "/info.html"}],
-    "cleanUrls": true
+    "rewrites": [{"source": "/info", "destination": "/info.html"}]
 }
