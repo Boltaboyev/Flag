@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="py-[10px] border-b">
+        <div class="container2 flex justify-between items-center">
+            <a href="../index.html">
+                <img src="https://www.countryflags.com/wp-content/themes/countryflags/assets/images/countryflags.svg"
+                    alt="" class="w-[200px]">
+            </a>
+
+            <a href="../index.html" class="text-blue-900 font-[500]">Main page</a>
+        </div>
+    </header>
+
+    <!-- flag info -->
+    <section class="py-[20px]">
+        <div class="container2">
+            <div class="flex flex-col gap-[10px] justify-center items-center">
+                <h1 class="text-[30px] font-[600]">Flag of <span id="countryName" class="text-blue-800"></span></h1>
+                <img id="countryFlagImg" src="" alt="" class="w-[400px] h-[400px] object-contain">
+                <p id="countryFlagInfo" class="max-w-[800px] text-[16px] text-blue-900"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-[40px] bg-[#1860fb9f]">
+        <div class="container2 grid grid-cols-3 gap-[20px]">
+            <!-- population -->
+            <div class="flex flex-col gap-[5px] justify-center items-center">
+                <h1 class="text-blue-950 font-[500] text-[25px]">Population <i class='bx bx-male-female'></i></h1>
+                <h1 id="populationNum" class="text-white font-[500] text-[25px]"></h1>
+            </div>
+
+            <!-- area -->
+            <div class="flex flex-col gap-[5px] justify-center items-center">
+                <h1 class="text-blue-950 font-[500] text-[25px]">Surface <i class='bx bx-map-alt'></i></h1>
+                <h1 id="area" class="text-white font-[500] text-[25px]"></h1>
+            </div>
+
+            <!-- Capital -->
+            <div class="flex flex-col gap-[5px] justify-center items-center">
+                <h1 class="text-blue-950 font-[500] text-[25px]">Capital <i class='bx bxs-buildings'></i></h1>
+                <h1 id="capital" class="text-white font-[500] text-[25px]"></h1>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-[40px]">
+        <div class="container2">
+
+            <div class="grid grid-cols-4 gap-[20px]">
+                <div class="flex flex-col justify-center items-center gap-[10px]">
+                    <h1 class="font-[500] opacity-60">Name</h1>
+                    <h1 id="countryN" class="text-blue-900 font-[500]"></h1>
+                </div>
+
+                <div class="flex flex-col justify-center items-center gap-[10px] border-l border-blue-300">
+                    <h1 class="font-[500] opacity-60">Continent </h1>
+                    <h1 id="continent" class="text-blue-900 font-[500]"></h1>
+                </div>
+
+                <div class="flex flex-col justify-center items-center gap-[10px] border-l border-blue-300">
+                    <h1 class="font-[500] opacity-60">Languages</h1>
+                    <h1 id="language" class="text-blue-900 font-[500]"></h1>
+                </div>
+
+
+                <div class="flex flex-col justify-center items-center gap-[10px] border-l border-blue-300">
+                    <h1 class="font-[500] opacity-60">Neighbours</h1>
+                    <h1 id="neighbours" class="text-blue-900 font-[500]"></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-[40px] bg-gray-200">
+        <div class="container2">
+            <div class="grid grid-cols-4 gap-[20px]">
+
+                <div class="flex flex-col justify-center items-center gap-[10px]">
+                    <h1 class="font-[500] text-[20px]">Currency <i class='bx bx-dollar-circle'></i></h1>
+                    <p id="currency" class="text-blue-900"></p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center gap-[10px]">
+                    <h1 class="font-[500] text-[20px]">Timezones <i class='bx bx-time'></i></h1>
+                    <p id="timezones" class="text-blue-900"></p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center gap-[10px]">
+                    <h1 class="font-[500] text-[20px]">Domain <i class='bx bx-wifi-2'></i></h1>
+                    <p id="domain" class="text-blue-900"></p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center gap-[10px]">
+                    <h1 class="font-[500] text-[20px]">FIFA <i class='bx bx-football'></i></h1>
+                    <p id="fifa" class="text-blue-900"></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="./info.bundle.js"></script>
+</body>
+
+</html>

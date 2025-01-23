@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container2 {
+    width: 98%;
+    margin: 0 auto;
+}
+
+@media (min-width: 1400px) {
+    .container2 {
+        width: 1350px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3075f4;
+    border-radius: 10px;
+}
+
+.filterByContinent::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 0;
+    transition: .2s;
+    @apply bg-blue-900;
+}
+
+.filterByContinent:hover::after {
+    width: 100%;
+}
+
+.filterByContinent.active::after {
+    width: 100%;
+}
+
+.link {
+    @apply h-[180px] w-[180px] rounded-md relative overflow-hidden;
+}
+
+.link img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+
+.link p {
+    position: absolute;
+    padding: 10px;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    transition: .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.link:hover p {
+    bottom: 0;
+}

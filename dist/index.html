@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="loader h-[100vh] w-full z-[9999] fixed top-0 left-0 bg-white flex justify-center items-center">
+        <img src="https://i.pinimg.com/originals/c8/ea/31/c8ea31d1fd180e7c7a97a140b3fbbc12.gif" alt="" class="h-[120px] select-none">
+    </div>
+
+    <header class="py-[10px]">
+        <div class="container2 flex justify-between items-center">
+            <a href="./index.html">
+                <img src="https://www.countryflags.com/wp-content/themes/countryflags/assets/images/countryflags.svg"
+                    alt="" class="w-[200px]">
+            </a>
+
+            <input id="search" type="text" placeholder="Search"
+                class="border border-blue-950 rounded-lg p-[5px_10px] outline-none  w-[400px]">
+        </div>
+    </header>
+
+    <section class="py-[20px]">
+        <div id="filterByContinentBox" class="container2 flex justify-start items-center gap-[25px]">
+            <button class="filterByContinent active relative text-blue-900 font-[500]" id="all">All</button>
+            <button class="filterByContinent relative text-blue-900 font-[500]" id="Europe">Europe</button>
+            <button class="filterByContinent relative text-blue-900 font-[500]" id="Africa">Africa</button>
+            <button class="filterByContinent relative text-blue-900 font-[500]" id="Asia">Asia</button>
+            <button class="filterByContinent relative text-blue-900 font-[500]" id="North America">North
+                America</button>
+            <button class="filterByContinent relative text-blue-900 font-[500]" id="South America">South
+                America</button>
+            <button class="filterByContinent relative text-blue-900 font-[500]" id="Oceania">Oceania</button>
+        </div>
+    </section>
+
+
+    <section class="py-[20px]">
+        <div class="container2">
+            <div id="mainAppendDiv" class="grid grid-cols-7 gap-[20px_15px]">
+                <!-- flags -->
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./main.bundle.js"></script>
+
+</body>
+
+</html>
